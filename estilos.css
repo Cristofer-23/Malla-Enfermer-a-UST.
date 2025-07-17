@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+  background-color: #fff8fb;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #b3577a;
+}
+
+#malla {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Colores pastel por año */
+.semestre {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+/* Primer Año - rosa pastel */
+.semestre.primer-ano {
+  background-color: #ffe4ec;
+  border: 2px solid #f4b6cd;
+  color: #a34060;
+}
+
+/* Segundo Año - amarillo pastel */
+.semestre.segundo-ano {
+  background-color: #fff7d6;
+  border: 2px solid #f0db8a;
+  color: #927d3c;
+}
+
+/* Tercer Año - naranja pastel */
+.semestre.tercer-ano {
+  background-color: #ffead0;
+  border: 2px solid #f0c17d;
+  color: #a67a3c;
+}
+
+/* Cuarto Año - azul pastel */
+.semestre.cuarto-ano {
+  background-color: #dce9ff;
+  border: 2px solid #8ca9f0;
+  color: #455a91;
+}
+
+/* Quinto Año - rojo pastel */
+.semestre.quinto-ano {
+  background-color: #ffdede;
+  border: 2px solid #f08a8a;
+  color: #914242;
+}
+
+.semestre h2 {
+  margin: 0 0 10px;
+}
+
+/* Ramos */
+.ramo {
+  padding: 6px 10px;
+  margin: 5px 0;
+  border: 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: 0.3s;
+  user-select: none;
+}
+
+/* Color base de borde para ramo */
+.ramo {
+  border-color: #c49bbf;
+}
+
+/* Hover */
+.ramo:hover {
+  background-color: #f9e7f2;
+}
+
+/* Aprobado */
+.ramo.aprobado {
+  text-decoration: line-through;
+  background-color: #d6f0d9;
+  border-color: #60b465;
+  color: #486d40;
+}
+
+/* Bloqueado */
+.ramo.bloqueado {
+  opacity: 0.5;
+  pointer-events: none;
+  background-color: #fafafa;
+  border-color: #ccc;
+}
